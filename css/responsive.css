@@ -1,0 +1,273 @@
+/* Responsive Styles */
+
+/* Laptop (Large Screens) */
+@media screen and (min-width: 1201px) {
+  /* Additional styles specific to large screens */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Limit font size on large screens */
+@media screen and (min-width: 1200px) {
+  .desktop-nav li a {
+    font-size: 14.4px; 
+  }
+
+  h1 {
+    font-size: 42px; 
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 26.4px;
+  }
+
+  p, li {
+    font-size: 16.8px;
+  }
+}
+
+
+/* Laptop (Medium Screens) */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 95%;
+  }
+  
+  .container {
+    width: 90vw;
+  }
+  
+  .logo {
+    width: 12vw;
+  }
+  
+  .desktop-nav li a {
+    font-size: 1.4vw;
+  }
+  
+  h1 {
+    font-size: 3.5vw;
+  }
+  
+  h2 {
+    font-size: 3vw;
+  }
+  
+  h3 {
+    font-size: 2.2vw;
+  }
+  
+  p, li {
+    font-size: 1.4vw;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  
+  .container {
+    width: 90vw;
+    padding: calc(var(--spacing-unit) * 1.5);
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .logo {
+    width: 14vw;
+  }
+  
+  h1 {
+    font-size: 5vw;
+  }
+  
+  h2 {
+    font-size: 4.5vw;
+  }
+  
+  h3 {
+    font-size: 3.5vw;
+  }
+  
+  h4 {
+    font-size: 3vw;
+  }
+  
+  p, li {
+    font-size: 2.2vw;
+  }
+  
+  .hero-content {
+    padding-top: 5vw;
+    flex-direction: column;
+  }
+  
+
+  .education-content {
+    flex-direction: column;
+  }
+  
+  .certificates-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  .skill-tag {
+    font-size: 2vw;
+  }
+  
+  .contact-item i {
+    font-size: 4vw;
+  }
+  
+  .contact-item p, .contact-item a {
+    font-size: 2.2vw;
+  }
+  
+  .footer-logo {
+    font-size: 3vw;
+  }
+  
+  .footer-contacts p {
+    font-size: 2vw;
+  }
+  
+  .footer-social a {
+    font-size: 3vw;
+  }
+  
+  .project-item {
+    flex-direction: column;
+  }
+  
+  .project-image {
+    margin-bottom: calc(var(--spacing-unit) * 3);
+  }
+  
+  .skills-heading{
+  text-align: left;
+}
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+  
+  .container {
+    width: 95vw;
+    padding: calc(var(--spacing-unit));
+  }
+  
+  .logo {
+    width: 18vw;
+  }
+  
+  h1 {
+    font-size: 7vw;
+  }
+  
+  h2 {
+    font-size: 6vw;
+  }
+  
+  h3 {
+    font-size: 5vw;
+  }
+  
+  h4 {
+    font-size: 4.5vw;
+  }
+  
+  p, li {
+    font-size: 4vw;
+  }
+  
+  section {
+    padding: 20vw 0 10vw;
+  }
+  
+  #hero {
+    padding-top: 25vw;
+  }
+  
+  .languages-content {
+    flex-direction: column;
+  }
+  
+  .language-item {
+    margin-bottom: calc(var(--spacing-unit) * 2);
+  }
+  
+  .skills-container {
+    flex-direction: column;
+  }
+  
+  .skill-tag {
+    font-size: 3.5vw;
+  }
+  
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-item i {
+    font-size: 6vw;
+  }
+  
+    .contact-item p {
+    font-size: 4vw;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: calc(var(--spacing-unit) * 3);
+  }
+  
+  .footer-logo {
+    font-size: 5vw;
+  }
+  
+  .footer-contacts p {
+    font-size: 3.5vw;
+  }
+  
+  .footer-social a {
+    font-size: 5vw;
+  }
+}
+
+.hero-image {
+  width: min(25vw, 90vw); 
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto calc(var(--spacing-unit) * 4);
+  border: 2px solid rgba(244, 242, 242, 1);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
